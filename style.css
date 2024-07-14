@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  background: skyblue;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: solid red 2px; */
+}
+
+#memoryGame{
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  margin-top: -10px;
+  /* border: solid rgb(0, 0, 0) 2px; */
+}
+
+#categoryDiv{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* border: solid red 2px; */
+  font-size: 24px;
+  font-weight: bold;
+  height: 40px;
+}
+
+#chooseCategory{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.buttonsDiv{
+  /* margin-left: 20px; */
+  /* border: solid black 2px; */
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.categoryBtn{
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border: none;
+}
+
+#changeCategoryDiv{
+  margin-top: 10px;
+}
+
+.categoryBtn:hover{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-weight: bold;
+}
+
+.memory-game {
+  width: 100%;
+  height: 580px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  perspective: 1000px;
+  margin-top: 5px;
+  /* border: solid rgb(0, 0, 0) 2px; */
+}
+
+.memory-card {
+  width: 135px;
+  height: 180px;
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  /* padding: 20px; */
+  position: absolute;
+  border-radius: 15px;
+  background: #1c7ccc;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+
+.not-display-element {
+  display: none !important;
+}

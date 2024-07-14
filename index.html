@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+	<h1 id="memoryGame">Welcome To A Memory Game</h1>
+	<div id="categoryDiv">
+	<h2 id="chooseCategory">To Start The Game, First Choose A Category:</h2>
+	<div class="buttonsDiv">
+		<button class="btn btn-light categoryBtn" id="harryPotterBtn">Harry Potter</button>
+		<button class="btn btn-danger categoryBtn" id="dogsBtn">Dogs</button>
+		<button class="btn btn-warning categoryBtn" id="catsBtn">Cats</button>
+		<button class="btn btn-success categoryBtn" id="randomBtn">Random</button>
+	</div>
+	</div>
+	
+	
+	<section class="memory-game">
+		<div class="memory-card" data-framework="1">
+			<img class="front-face" id="imageNumber1" src="" alt="random image" />
+			<img class="back-face" src="img/BackCard.jpg" alt="back card" />
+		</div>
+		<div class="memory-card" data-framework="1">
+			<img class="front-face" id="imageNumber2" src="" alt="random image" />
+			<img class="back-face" src="img/BackCard.jpg" alt="back card" />
+		</div>
+
+		<div class="memory-card" data-framework="2">
+			<img class="front-face" id="imageNumber3" src="" alt="random image" />
+			<img class="back-face" src="img/BackCard.jpg" alt="back card" />
+		</div>
+		<div class="memory-card" data-framework="2">
+			<img class="front-face" id="imageNumber4" src="" alt="random image" />
+			<img class="back-face" src="img/BackCard.jpg" alt="back card" />
+		</div>
+
+		<div class="memory-card" data-framework="3">
+			<img class="front-face" id="imageNumber5" src="" alt="random image" />
+			<img class="back-face" src="img/BackCard.jpg" alt="back card" />
+		</div>
+		<div class="memory-card" data-framework="3">
+			<img class="front-face" id="imageNumber6" src="" alt="random image" />
+			<img class="back-face" src="img/BackCard.jpg" alt="back card" />
+		</div>
+
+		<div class="memory-card" data-framework="4">
+			<img class="front-face" id="imageNumber7" src="" alt="random image" />
+			<img class="back-face" src="img/BackCard.jpg" alt="back card" />
+		</div>
+		<div class="memory-card" data-framework="4">
+			<img class="front-face" id="imageNumber8" src="" alt="random image" />
+			<img class="back-face" src="img/BackCard.jpg" alt="back card" />
+		</div>
+
+		<div class="memory-card" data-framework="5">
+			<img class="front-face" id="imageNumber9" src="" alt="random image" />
+			<img class="back-face" src="img/BackCard.jpg" alt="back card" />
+		</div>
+		<div class="memory-card" data-framework="5">
+			<img class="front-face" id="imageNumber10" src="" alt="random image" />
+			<img class="back-face" src="img/BackCard.jpg" alt="back card" />
+		</div>
+
+		<div class="memory-card" data-framework="6">
+			<img class="front-face" id="imageNumber11" src="" alt="random image" />
+			<img class="back-face" src="img/BackCard.jpg" alt="back card" />
+		</div>
+		<div class="memory-card" data-framework="6">
+			<img class="front-face" id="imageNumber12" src="" alt="random image" />
+			<img class="back-face" src="img/BackCard.jpg" alt="back card" />
+		</div>
+		<div class="memory-card" data-framework="7">
+			<img class="front-face" id="imageNumber13" src="" alt="random image" />
+			<img class="back-face" src="img/BackCard.jpg" alt="back card" />
+		</div>
+		<div class="memory-card" data-framework="7">
+			<img class="front-face" id="imageNumber14" src="" alt="random image" />
+			<img class="back-face" src="img/BackCard.jpg" alt="back card" />
+		</div>
+		<div class="memory-card" data-framework="8">
+			<img class="front-face" id="imageNumber15" src="" alt="random image" />
+			<img class="back-face" src="img/BackCard.jpg" alt="back card" />
+		</div>
+		<div class="memory-card" data-framework="8">
+			<img class="front-face" id="imageNumber16" src="" alt="random image" />
+			<img class="back-face" src="img/BackCard.jpg" alt="back card" />
+		</div>
+		<div class="memory-card" data-framework="9">
+			<img class="front-face" id="imageNumber17" src="" alt="random image" />
+			<img class="back-face" src="img/BackCard.jpg" alt="back card" />
+		</div>
+		<div class="memory-card" data-framework="9">
+			<img class="front-face" id="imageNumber18" src="" alt="random image" />
+			<img class="back-face" src="img/BackCard.jpg" alt="back card" />
+		</div>
+		<div class="memory-card" data-framework="10">
+			<img class="front-face" id="imageNumber19" src="" alt="random image" />
+			<img class="back-face" src="img/BackCard.jpg" alt="back card" />
+		</div>
+		<div class="memory-card" data-framework="10">
+			<img class="front-face" id="imageNumber20" src="" alt="random image" />
+			<img class="back-face" src="img/BackCard.jpg" alt="back card" />
+		</div>
+		<div class="memory-card" data-framework="11">
+			<img class="front-face" id="imageNumber21" src="" alt="random image" />
+			<img class="back-face" src="img/BackCard.jpg" alt="back card" />
+		</div>
+		<div class="memory-card" data-framework="11">
+			<img class="front-face" id="imageNumber22" src="" alt="random image" />
+			<img class="back-face" src="img/BackCard.jpg" alt="back card" />
+		</div>
+		<div class="memory-card" data-framework="12">
+			<img class="front-face" id="imageNumber23" src="" alt="random image" />
+			<img class="back-face" src="img/BackCard.jpg" alt="back card" />
+		</div>
+		<div class="memory-card" data-framework="12">
+			<img class="front-face" id="imageNumber24" src="" alt="random image" />
+			<img class="back-face" src="img/BackCard.jpg" alt="back card" />
+		</div>
+	</section>
+	<div id="changeCategoryDiv" class="not-display-element">
+		<button class="btn btn-danger categoryBtn" id="changeCategoryBtn">Change Category</button>
+	</div>
+</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
